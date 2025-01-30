@@ -35,6 +35,6 @@ ul {
 
 
 /* Definir border radiud apenas para imagens jpg */
-img [src$=".jpg"]{
+img[src$=".jpg"]{
   border-radius: 4px;
 }

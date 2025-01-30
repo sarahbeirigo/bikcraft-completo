@@ -38,8 +38,25 @@
 .tecnologia-conteudo a {
   display: block;
   margin-bottom: 80px;
+  position: relative;
 }
 
+.tecnologia-conteudo a::after {
+  content: "";
+  display: block;
+  width: 261px;
+  height: 4px;
+  background: var(--cor-p1);
+  position: absolute;
+}
+
+.tecnologia-conteudo a:hover::after {
+  background-color: var(--cor-0);
+}
+
+.tecnologia-conteudo a:hover {
+  color: var(--cor-0);
+}
 .tecnologia-vantagens {
   display: flex;
   gap: 40px;
@@ -54,18 +71,48 @@
   width: 24px;
   margin-bottom: 8px;
 }
-.tecnologia-conteudo a::after {
-  content: "";
-  display: block;
-  width: 261px;
-  height: 4px;
-  background: var(--cor-p1);
-}
 
-.tecnologia-conteudo a:hover::after {
-  background-color: var(--cor-0);
-}
+@media (max-width: 800px) {
+  .tecnologia-bg {
+    box-shadow: none;
+  }
+  .tecnologia {
+    grid-template-columns: 1fr;
+  }
 
-.tecnologia-conteudo a:hover {
-  color: var(--cor-0);
+  .tecnologia-vantagens {
+    flex-direction: column;
+  }
+
+  .tecnologia-conteudo {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .tecnologia-conteudo a {
+    color: var(--cor-0);
+    align-self: start;
+    font-weight: 600;
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 5px;
+    background: linear-gradient(#ffbf00, #f2a50c);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+
+  .tecnologia-conteudo a::after {
+    display: none;
+    content: none;
+    color: var(--cor-0);
+    background: linear-gradient(#e4a30b, #a66f00);
+  }
+
+  .tecnologia-conteudo > p {
+    margin-bottom: 40px;
+  }
+
+  .tecnologia-img img {
+    display: none;
+  }
 }
