@@ -16,7 +16,8 @@ body {
 h1,
 h2,
 h3,
-p {
+p,
+blockquote {
   margin: 0;
   padding: 0;
 }
@@ -33,8 +34,7 @@ ul {
   list-style: none;
 }
 
-
 /* Definir border radiud apenas para imagens jpg */
-img[src$=".jpg"]{
+img[src$=".jpg"] {
   border-radius: 4px;
 }
