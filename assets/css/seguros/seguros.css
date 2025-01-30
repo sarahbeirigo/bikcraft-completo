@@ -1,0 +1,61 @@
+.seguros-bg {
+  background-color: var(--cor-11);
+}
+
+.seguros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: var(--cor-0);
+  padding: 30px 0;
+  gap: 40px;
+  align-items: center;
+}
+
+.seguros h2 {
+  grid-column: 1/-1;
+}
+
+.seguro-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  padding: 64px;
+  background-color: var(--cor-12);
+}
+
+.seguro-item li {
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.seguro-item li + li {
+  margin-top: 10px;
+}
+
+.seguro-item li::before {
+    margin-left: -30px;
+  content: url(../../img/icones/lista.svg);
+  position: absolute;
+}
+
+.seguro-item span {
+  display: block;
+  grid-column: 2;
+  text-align: right;
+}
+
+.seguro-item .seguro-botao {
+  align-self: end;
+  margin-top: 40px;
+  max-width: max-content;
+}
+.botao-prata {
+  background: var(--cor-10);
+}
+
+.botao-prata:hover {
+    background: var(--cor-9);
+  }
+  
