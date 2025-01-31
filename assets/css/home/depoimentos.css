@@ -63,6 +63,7 @@
 
   .depoimento-conteudo {
     padding: 40px;
+    justify-items: center;
     align-items: center;
   }
   .depoimento-conteudo blockquote > p {

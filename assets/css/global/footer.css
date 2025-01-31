@@ -1,0 +1,38 @@
+.footer-bg {
+  background-color: var(--cor-12);
+}
+
+.footer-conteudo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 40px;
+}
+.footer-contatos li + li,
+.footer-informacoes li + li {
+  margin-top: 20px;
+}
+
+.footer-contatos ul > li:nth-child(even)::after {
+  content: "";
+  display: block;
+  max-width: 360px;
+  height: 2px;
+  background: var(--cor-11);
+  margin-top: 16px;
+}
+
+.footer-contatos a:hover,
+.footer-informacoes a:hover {
+  color: var(--cor-0);
+}
+.footer-contatos > h2,
+.footer-informacoes > h2 {
+  margin-bottom: 20px;
+}
+.redes-contatos {
+  display: flex;
+  gap: 32px;
+  margin-top:32px;
+}
