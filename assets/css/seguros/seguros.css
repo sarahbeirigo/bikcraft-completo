@@ -6,8 +6,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: var(--cor-0);
-  padding: 30px 0;
   gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   align-items: center;
 }
 
@@ -17,9 +18,9 @@
 
 .seguro-item {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr auto;
   column-gap: 40px;
-  padding: 64px;
+  padding: 32px 32px 32px 60px;
   background-color: var(--cor-12);
 }
 
@@ -35,7 +36,7 @@
 }
 
 .seguro-item li::before {
-    margin-left: -30px;
+  margin-left: -30px;
   content: url(../../img/icones/lista.svg);
   position: absolute;
 }
@@ -46,6 +47,9 @@
   text-align: right;
 }
 
+.seguro-item a {
+  grid-column: 1/-1;
+}
 .seguro-item .seguro-botao {
   align-self: end;
   margin-top: 40px;
@@ -56,6 +60,20 @@
 }
 
 .botao-prata:hover {
-    background: var(--cor-9);
+  background: var(--cor-9);
+}
+
+@media (max-width: 800px) {
+  .seguros {
+    grid-template-columns: 1fr;
   }
-  
+
+  .seguro-item .seguro-botao {
+    padding: 12px 32px;
+    font-size: 1rem;
+    align-self: center;
+    grid-column: 1 / -1; /* Ocupar as duas colunas */
+    justify-self: center; /* Centralizar o botão */
+    align-self: center; /* Ajustar a posição vertical */
+  }
+}

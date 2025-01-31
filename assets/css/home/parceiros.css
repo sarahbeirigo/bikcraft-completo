@@ -25,13 +25,14 @@
 }
 
 .parceiros-conteudo li:nth-child(1),
-li:nth-child(5) {
+.parceiros-conteudo li:nth-child(5) {
   border-left: none;
 }
 
 .parceiros-conteudo li:nth-child(n + 5) {
   border-top: 2px solid var(--cor-2);
 }
+
 
 @media (max-width: 800px) {
   .parceiros-conteudo {
@@ -44,8 +45,9 @@ li:nth-child(5) {
     margin-bottom: 40px;
   }
 
-  .parceiros-conteudo li:nth-child(1),
+  .parceiros-conteudo li:nth-child(1), .parceiros-conteudo
   li:nth-child(2) {
     border-bottom: 2px solid var(--cor-2);
+    max-width: 25;
   }
 }
