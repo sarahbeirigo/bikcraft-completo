@@ -34,5 +34,39 @@
 .redes-contatos {
   display: flex;
   gap: 32px;
-  margin-top:32px;
+  margin-top: 32px;
+}
+
+.footer-conteudo span {
+  margin-top: 20px;
+  grid-column: 1/-1;
+}
+
+@media (max-width: 800px) {
+  .footer-img {
+    display: none;
+  }
+
+  .footer-conteudo {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 40px 20px;
+  }
+  .footer-conteudo span {
+    text-align: center;
+  }
+
+  .footer-contatos ul > li:nth-child(even)::after {
+    display: none;
+  }
+
+  .footer-contatos li + li,
+  .footer-informacoes li + li {
+    margin-top: 10px;
+  }
+
+  .redes-contatos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
