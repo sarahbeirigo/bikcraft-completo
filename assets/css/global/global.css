@@ -31,6 +31,7 @@ ul {
   color: inherit;
   text-decoration: none;
   list-style: none;
+  display: block;
 }
 
 /* Definir border radiud apenas para imagens jpg */
