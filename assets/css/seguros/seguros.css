@@ -71,9 +71,13 @@
   .seguro-item .seguro-botao {
     padding: 12px 32px;
     font-size: 1rem;
-    align-self: center;
-    grid-column: 1 / -1; /* Ocupar as duas colunas */
-    justify-self: center; /* Centralizar o botão */
-    align-self: center; /* Ajustar a posição vertical */
+    grid-column: 1 / -1;
+    margin-top: 10px;
+  }
+
+  .seguro-item > ul {
+    grid-column: 1/-1;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
