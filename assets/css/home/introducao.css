@@ -34,6 +34,7 @@
     .introducao {
       grid-template-columns: 1fr;
       place-items: center;
+      margin-bottom: 40px;
     }
   
     .introducao-conteudo {
