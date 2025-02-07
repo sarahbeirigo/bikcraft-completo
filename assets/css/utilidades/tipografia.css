@@ -20,17 +20,23 @@
   font: 500 1.125rem/1.17 "Inter", serif;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 800px) {
   .font-xl {
-    font-size: 2.75rem;
+    font-size: 3rem;
   }
 
-  .font-m, .font-m-b {
-    font-size: 1.25rem
+  .font-m,
+  .font-m-b {
+    font-size: 1.25rem;
   }
 
   .font-s {
     font-size: 1rem;
   }
-  
+}
+
+@media (max-width: 420px) {
+  .font-xl {
+    font-size: 2.5rem;
+  }
 }
