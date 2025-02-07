@@ -15,8 +15,13 @@
 
 .termos-conteudo h2 {
   margin-bottom: 20px;
+
+}
+
+.termos-conteudo p + h2{
   margin-top: 40px;
 }
+
 
 .termos-conteudo p + p {
   margin-top: 20px;
