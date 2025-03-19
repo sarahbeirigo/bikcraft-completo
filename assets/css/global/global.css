@@ -16,7 +16,10 @@ h1,
 h2,
 h3,
 p,
-blockquote {
+blockquote,
+dl,
+dd,
+dt {
   margin: 0;
   padding: 0;
 }
@@ -37,4 +40,8 @@ ul {
 /* Definir border radiud apenas para imagens jpg */
 img[src$=".jpg"] {
   border-radius: 4px;
+}
+
+#seguros .seguros{
+  padding-top: 0;
 }

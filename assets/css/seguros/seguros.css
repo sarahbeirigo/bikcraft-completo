@@ -1,4 +1,4 @@
-.seguros-bg {
+.seguros-bg, .titulos-bg {
   background-color: var(--cor-11);
 }
 
@@ -61,6 +61,11 @@
 
 .botao-prata:hover {
   background: var(--cor-9);
+}
+
+.titulos-conteudo {
+  padding-top:40px;
+  padding-bottom: 40px;
 }
 
 @media (max-width: 800px) {
